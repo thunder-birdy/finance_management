@@ -107,6 +107,12 @@
       <DependentUpon>MaterialQuote.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MaterialQuoteEdit.Designer.vb">
+      <DependentUpon>MaterialQuoteEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialQuoteEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -127,6 +133,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MaterialQuote.resx">
       <DependentUpon>MaterialQuote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialQuoteEdit.resx">
+      <DependentUpon>MaterialQuoteEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

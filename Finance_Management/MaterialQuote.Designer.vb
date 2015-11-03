@@ -22,7 +22,7 @@ Partial Class material_quote
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -94,7 +94,7 @@ Partial Class material_quote
         Me.Label3.Padding = New System.Windows.Forms.Padding(3)
         Me.Label3.Size = New System.Drawing.Size(160, 18)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "单位"
+        Me.Label3.Text = "单位名称"
         '
         'Label2
         '
@@ -169,9 +169,9 @@ Partial Class material_quote
         '
         Me.MaterialTable.AllowUserToAddRows = False
         Me.MaterialTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue
-        Me.MaterialTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue
+        Me.MaterialTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
         Me.MaterialTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.MaterialTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MaterialTable.Dock = System.Windows.Forms.DockStyle.Fill
