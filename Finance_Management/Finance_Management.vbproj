@@ -100,11 +100,11 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Definition.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="MaterialQuote.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="MaterialQuote.Designer.vb">
+      <DependentUpon>MaterialQuote.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -125,6 +125,9 @@
     <Compile Include="SQL.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MaterialQuote.resx">
+      <DependentUpon>MaterialQuote.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
