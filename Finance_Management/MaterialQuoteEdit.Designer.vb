@@ -35,7 +35,7 @@ Partial Class MaterialQuoteEdit
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.cbCompany = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class MaterialQuoteEdit
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(122, 267)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(122, 205)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -90,7 +90,7 @@ Partial Class MaterialQuoteEdit
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox5, 1, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox1, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.ListBox1, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.cbCompany, 0, 5)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -101,7 +101,7 @@ Partial Class MaterialQuoteEdit
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(291, 230)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(291, 200)
         Me.TableLayoutPanel2.TabIndex = 1
         '
         'Label1
@@ -192,15 +192,15 @@ Partial Class MaterialQuoteEdit
         Me.TextBox1.Size = New System.Drawing.Size(285, 26)
         Me.TextBox1.TabIndex = 10
         '
-        'ListBox1
+        'cbCompany
         '
-        Me.ListBox1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(3, 145)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(114, 20)
-        Me.ListBox1.TabIndex = 11
+        Me.cbCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbCompany.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.cbCompany.FormattingEnabled = True
+        Me.cbCompany.Location = New System.Drawing.Point(3, 145)
+        Me.cbCompany.Name = "cbCompany"
+        Me.cbCompany.Size = New System.Drawing.Size(120, 24)
+        Me.cbCompany.TabIndex = 11
         '
         'MaterialQuoteEdit
         '
@@ -209,7 +209,7 @@ Partial Class MaterialQuoteEdit
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(291, 317)
+        Me.ClientSize = New System.Drawing.Size(291, 255)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -238,5 +238,5 @@ Partial Class MaterialQuoteEdit
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents cbCompany As ComboBox
 End Class

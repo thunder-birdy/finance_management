@@ -22,7 +22,7 @@ Partial Class material_quote
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -34,6 +34,7 @@ Partial Class material_quote
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MaterialTable = New System.Windows.Forms.DataGridView()
+        Me.btnCompanyManage = New System.Windows.Forms.Button()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -76,6 +77,7 @@ Partial Class material_quote
         Me.TableLayoutPanel1.Controls.Add(Me.btnSearch, 3, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.btnEdit, 4, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnCompanyManage, 4, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -169,9 +171,9 @@ Partial Class material_quote
         '
         Me.MaterialTable.AllowUserToAddRows = False
         Me.MaterialTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue
-        Me.MaterialTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue
+        Me.MaterialTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.MaterialTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.MaterialTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MaterialTable.Dock = System.Windows.Forms.DockStyle.Fill
@@ -182,6 +184,15 @@ Partial Class material_quote
         Me.MaterialTable.RowTemplate.Height = 23
         Me.MaterialTable.Size = New System.Drawing.Size(834, 370)
         Me.MaterialTable.TabIndex = 0
+        '
+        'btnCompanyManage
+        '
+        Me.btnCompanyManage.Location = New System.Drawing.Point(751, 3)
+        Me.btnCompanyManage.Name = "btnCompanyManage"
+        Me.btnCompanyManage.Size = New System.Drawing.Size(78, 21)
+        Me.btnCompanyManage.TabIndex = 8
+        Me.btnCompanyManage.Text = "单位管理"
+        Me.btnCompanyManage.UseVisualStyleBackColor = True
         '
         'material_quote
         '
@@ -217,4 +228,5 @@ Partial Class material_quote
     Friend WithEvents btnEdit As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents MaterialTable As DataGridView
+    Friend WithEvents btnCompanyManage As Button
 End Class
